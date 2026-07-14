@@ -1,5 +1,6 @@
 html {
   scroll-behavior: smooth;
+  width: 100%;
 }
 
 .b-port {
@@ -32,14 +33,11 @@ html {
 }
 
 body {
-  padding: 20px;
-
   background-size: cover;
   background-position: center;
   min-height: 100vh;
   margin: 0;
-  box-sizing: border-box;
-
+  width: 100vw;
   backdrop-filter: blur(8px);
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.552)),
