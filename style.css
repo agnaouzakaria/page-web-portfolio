@@ -1,0 +1,560 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.b-port {
+  margin-top: 5px;
+  background-color: re;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 50px;
+  position: relative;
+  overflow: hidden;
+  border: none;
+  width: 70%;
+  margin: auto;
+  position: sticky;
+  top: 5%;
+  z-index: 999;
+}
+
+.b-port::before {
+  content: "";
+  inset: 0;
+  background-image: url(images/background-site-webs.avif);
+  background-position: center;
+  background-size: cover;
+  filter: blur(10px);
+  position: absolute;
+  border: none;
+}
+
+body {
+  padding: 20px;
+
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  margin: 0;
+  box-sizing: border-box;
+
+  backdrop-filter: blur(8px);
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.552)),
+    url("images/background-site-webs.avif");
+}
+.portfolio-parent {
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+  background: rgba(255, 255, 255, 0.884);
+  align-items: center;
+  border-radius: 30px;
+  width: 100%;
+  position: sticky;
+  top: 5%;
+  margin-bottom: 2%;
+  border-style: solid;
+  border-color: rgba(61, 61, 61, 0.295);
+}
+
+.contact,
+.about,
+.portfolio {
+  margin-left: 10%;
+  margin-right: 10%;
+  background: rgba(255, 255, 255, 0.084);
+  padding: 1%;
+  border-radius: 15px;
+  transition: 0.5s;
+  align-items: center;
+  text-decoration: none;
+  color: rgb(43, 131, 255);
+  backdrop-filter: blur(20px);
+}
+
+.portfolio::first-letter {
+  font-size: 30px;
+  color: rgb(0, 30, 94);
+}
+
+.portfolio {
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+}
+
+.contact:hover,
+.about:hover,
+.portfolio:hover {
+  transform: scale(1.009);
+  /* background-image: linear-gradient(
+    to bottom left,
+    rgb(83, 123, 255),
+    rgb(0, 179, 255)
+  ); */
+  box-shadow: 0 0 10px 5px #0000005d inset;
+  color: rgb(0, 0, 255);
+}
+
+.contact:visited,
+.about:visited,
+.portfolio:visited {
+  color: rgb(97, 0, 27);
+}
+
+.contact,
+.about {
+  padding: 2%;
+}
+/* 
+.anim {
+  width: 20px;
+  height: 20px;
+  background-image: url(https://png.pngtree.com/png-vector/20260113/ourlarge/pngtree-fifa-world-cup-2026-soccer-ball-with-vibrant-green-blue-and-png-image_18492533.webp);
+  background-size: cover;
+  background-color: rebeccapurple;
+  animation-name: anim;
+  animation-timing-function: linear;
+  animation-duration: 9s;
+  animation-iteration-count: infinite;
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+.anim:hover {
+  animation-play-state: paused;
+}
+
+@media (max-width: 1099px) {
+  @keyframes anim {
+    0% {
+      rotate: 0;
+      translate: 0 0;
+    }
+    25% {
+      rotate: 180deg;
+      translate: 0 calc(100vh - 25px);
+    }
+    50% {
+      rotate: 360deg;
+      translate: calc(100vw - 20px) calc(100vh - 25px);
+    }
+    75% {
+      rotate: 0deg;
+      translate: calc(100vw - 30px) 0;
+    }
+    100% {
+      rotate: 180deg;
+      translate: 0 0;
+    }
+  }
+}
+
+@media (min-width: 1100px) and (max-width: 2000px) {
+  @keyframes anim {
+    0% {
+      rotate: 0;
+      translate: 0 0;
+    }
+    25% {
+      rotate: 180deg;
+      translate: 0 calc(100vh - 24px);
+    }
+    50% {
+      rotate: 360deg;
+      translate: calc(100vw - 20px) calc(100vh - 24px);
+    }
+    75% {
+      rotate: 0deg;
+      translate: calc(100vw - 20px) 0;
+    }
+    100% {
+      rotate: 180deg;
+      translate: 0 0;
+    }
+  }
+}
+*/
+.text-hid {
+  display: inline-block;
+  font-family: "Century Gothic", AppleGothic, sans-serif;
+  color: blue;
+  margin-top: 100px;
+
+  font-size: 40px;
+  animation-name: hid;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  overflow: hidden;
+  white-space: nowrap;
+  animation-timing-function: linear;
+  width: 14ch;
+  display: flex;
+  justify-self: center;
+  margin-bottom: 100px;
+}
+
+.text-hid:hover {
+  animation-play-state: paused;
+}
+
+@keyframes hid {
+  0% {
+    width: 0;
+  }
+
+  5% {
+    width: 0;
+  }
+
+  60% {
+    width: 19ch;
+  }
+
+  90% {
+    width: 0;
+  }
+
+  100% {
+    width: 0;
+  }
+}
+
+.h1-1 {
+  font-family: "Century Gothic", AppleGothic, sans-serif;
+
+  color: white;
+  padding-left: 5px;
+  width: 500px;
+  text-align: left;
+}
+
+.project {
+  width: 500px;
+  height: 300px;
+  border-style: groove;
+  border-radius: 20px;
+  border-color: rgb(86, 86, 255);
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  gap: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.box1,
+.box2,
+.box3 {
+  margin-top: 3%;
+  width: 30%;
+  height: 90%;
+  background-color: blue;
+  border-radius: 20px;
+  transition: all 2s;
+  flex: 1;
+}
+.box1:hover,
+.box2:hover,
+.box3:hover {
+  box-shadow: 0 0 5px 2px rgb(0, 130, 252);
+  flex: 3;
+}
+
+.title-prpjects {
+  text-decoration: none;
+  color: rgb(0, 94, 255);
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.915);
+  border-radius: 0 0 20px 20px;
+  margin-top: 184.5px;
+  padding: 14px;
+  z-index: 1;
+  flex: 1;
+}
+
+.box1 {
+  position: relative;
+  background: transparent;
+  display: flex;
+  font-size: 25px;
+  overflow: hidden;
+  border: solid 2px rgb(0, 37, 187);
+}
+
+/* Project 1 */
+
+.box1::before {
+  content: "";
+  inset: 0;
+  position: absolute;
+  background: url("images/password-manager.avif");
+  background-position: center;
+  background-size: cover;
+  z-index: 0;
+  filter: blur(2px);
+}
+
+/* Project 2 */
+
+.box2 {
+  position: relative;
+  background: transparent;
+  display: flex;
+  font-size: 25px;
+  overflow: hidden;
+  border: solid 2px rgb(0, 37, 187);
+}
+
+.box2::before {
+  content: "";
+  inset: 0;
+  position: absolute;
+  background: url("images/cesar-cypher.avif");
+  background-position: center;
+  background-size: cover;
+  z-index: 0;
+  filter: blur(2px);
+}
+
+/* Project 3 */
+
+.box3 {
+  position: relative;
+  background: transparent;
+  display: flex;
+  font-size: 25px;
+  overflow: hidden;
+  border: solid 2px rgb(0, 37, 187);
+}
+
+.box3::before {
+  content: "";
+  inset: 0;
+  position: absolute;
+  background: url("images/student-manager.avif");
+  background-position: center;
+  background-size: cover;
+  z-index: 0;
+  filter: blur(2px);
+}
+
+.project-lang {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  justify-content: space-around;
+}
+
+.language-programation {
+  display: flex;
+  width: 500px;
+  height: 300px;
+  border: solid 3px rgb(86, 86, 255);
+  border-radius: 20px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-evenly;
+  position: relative;
+  overflow: hidden;
+}
+.langue-c,
+.langue-python,
+.langue-html,
+.langue-css {
+  width: 240px;
+  height: 130px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 18px;
+  position: absolute;
+  overflow: hidden;
+  z-index: 1;
+  transition: all 0.7s ease-in-out;
+}
+
+.langue-c::before {
+  content: "";
+  inset: 0;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/c.avif);
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px);
+  position: absolute;
+  z-index: 0;
+}
+
+.langue-python::before {
+  content: "";
+  inset: 0;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(images/Python.avif);
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px);
+  position: absolute;
+}
+
+.langue-html::before {
+  content: "";
+  inset: 0;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(images/html.avif);
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px);
+  position: absolute;
+}
+
+.langue-css::before {
+  content: "";
+  inset: 0;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(images/css.avif);
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px);
+  position: absolute;
+}
+
+.html5 {
+  display: flex;
+  position: absolute;
+  z-index: 1;
+  color: rgb(255, 255, 255);
+  top: calc(50% - 10px);
+  left: calc(50% - 27px);
+  font-size: 20px;
+  font-family: AppleGothic, sans-serif;
+  transition: all 0.5s;
+}
+
+.c {
+  display: flex;
+  position: absolute;
+  z-index: 1;
+  color: white;
+  top: calc(50% - 10px);
+  left: calc(50% - 5px);
+  font-size: 20px;
+  font-family: AppleGothic, sans-serif;
+  transition: all 0.5s;
+}
+
+.css {
+  display: flex;
+  position: absolute;
+  z-index: 1;
+  color: white;
+  top: calc(50% - 10px);
+  left: calc(50% - 15px);
+  font-size: 20px;
+  font-family: AppleGothic, sans-serif;
+  transition: all 0.5s;
+}
+
+.python {
+  display: flex;
+  position: absolute;
+  z-index: 1;
+  color: white;
+  top: calc(50% - 10px);
+  left: calc(50% - 32px);
+  font-size: 20px;
+  font-family: AppleGothic, sans-serif;
+  transition: all 0.5s;
+}
+
+.langue-c {
+  top: 14px;
+  left: 8px;
+}
+.langue-python {
+  top: 14px;
+  right: 8px;
+}
+.langue-html {
+  bottom: 14px;
+  left: 8px;
+}
+.langue-css {
+  bottom: 14px;
+  right: 8px;
+}
+
+.langue-c:hover {
+  top: 7.3%;
+  left: 5%;
+  width: 90%;
+  height: 85%;
+  z-index: 10;
+  box-shadow: 0 0 150px 40px #1e00ff;
+}
+.langue-python:hover {
+  top: 7.3%;
+  right: 5%;
+  width: 90%;
+  height: 85%;
+  z-index: 10;
+  box-shadow:
+    -40px -40px 150px 40px #006aff,
+    40px 40px 150px 40px yellow;
+}
+.langue-html:hover {
+  bottom: 7.3%;
+  left: 5%;
+  width: 90%;
+  height: 85%;
+  z-index: 10;
+  box-shadow: 0 0 150px 40px #dc6300;
+}
+.langue-css:hover {
+  bottom: 7.3%;
+  right: 5%;
+  width: 90%;
+  height: 85%;
+  z-index: 10;
+  box-shadow: 0 0 150px 40px #006aff;
+}
+.langue-c p {
+  visibility: none;
+}
+
+.text-desc {
+  position: absolute;
+  top: 25%;
+  left: 20%;
+  right: 20%;
+  visibility: hidden;
+  opacity: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  color: white;
+  transition: 0.5s ease-in-out;
+  transform: translateY(-100px);
+}
+
+.langue-c:hover .text-desc,
+.langue-python:hover .text-desc,
+.langue-html:hover .text-desc,
+.langue-css:hover .text-desc {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.langue-c:hover .c,
+.langue-python:hover .python,
+.langue-html:hover .html5,
+.langue-css:hover .css {
+  visibility: 0;
+  opacity: 0;
+}
