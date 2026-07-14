@@ -5,7 +5,6 @@ html {
 
 .b-port {
   margin-top: 5px;
-  background-color: re;
   padding-top: 3px;
   padding-bottom: 3px;
   padding-left: 20px;
@@ -27,7 +26,7 @@ html {
   background-image: url(images/background-site-webs.avif);
   background-position: center;
   background-size: cover;
-  filter: blur(10px);
+  filter: blur(50px);
   position: absolute;
   border: none;
 }
@@ -75,7 +74,7 @@ body {
 
 .portfolio::first-letter {
   font-size: 30px;
-  color: rgb(0, 30, 94);
+  color: rgb(0, 54, 170);
 }
 
 .portfolio {
@@ -179,29 +178,81 @@ body {
 }
 */
 .text-hid {
-  display: inline-block;
   font-family: "Century Gothic", AppleGothic, sans-serif;
-  color: blue;
+  color: rgb(0, 85, 255);
   margin-top: 100px;
-
   font-size: 40px;
+  width: 19ch;
+  display: flex;
+  justify-self: center;
+  margin-bottom: 30px;
+  text-shadow: 0 5px 8px rgb(0, 0, 0);
+  margin-left: 7%;
+}
+
+.sum {
+  color: white;
   animation-name: hid;
-  animation-duration: 8s;
+  animation-duration: 30s;
   animation-iteration-count: infinite;
   overflow: hidden;
   white-space: nowrap;
   animation-timing-function: linear;
-  width: 14ch;
+  width: 0;
+
+  font-family: "Century Gothic", AppleGothic, sans-serif;
   display: flex;
   justify-self: center;
-  margin-bottom: 100px;
-}
-
-.text-hid:hover {
-  animation-play-state: paused;
+  margin-bottom: 80px;
+  position: absolute;
+  font-size: 20px;
 }
 
 @keyframes hid {
+  0% {
+    width: 0;
+  }
+
+  17.5% {
+    width: 37ch;
+  }
+  22.5% {
+    width: 37ch;
+  }
+
+  38% {
+    width: 0;
+  }
+  40% {
+    width: 0;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+.sum2 {
+  color: white;
+  animation-name: hi;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  overflow: hidden;
+  white-space: nowrap;
+  animation-timing-function: linear;
+  width: 0;
+  position: absolute;
+  font-family: "Century Gothic", AppleGothic, sans-serif;
+  display: flex;
+  justify-self: center;
+  margin-bottom: 80px;
+  font-size: 20px;
+}
+
+par-sum {
+  position: relative;
+}
+
+@keyframes hi {
   0% {
     width: 0;
   }
@@ -210,14 +261,18 @@ body {
     width: 0;
   }
 
-  60% {
-    width: 19ch;
-  }
-
-  90% {
+  41% {
     width: 0;
   }
-
+  70% {
+    width: 48ch;
+  }
+  76% {
+    width: 48ch;
+  }
+  96% {
+    width: 0;
+  }
   100% {
     width: 0;
   }
@@ -235,9 +290,8 @@ body {
 .project {
   width: 500px;
   height: 300px;
-  border-style: groove;
+  border-style: none;
   border-radius: 20px;
-  border-color: rgb(86, 86, 255);
   display: flex;
   justify-content: space-around;
   margin-bottom: 20px;
@@ -252,7 +306,6 @@ body {
   margin-top: 3%;
   width: 30%;
   height: 90%;
-  background-color: blue;
   border-radius: 20px;
   transition: all 1s;
   flex: 1;
@@ -282,7 +335,7 @@ body {
   display: flex;
   font-size: 25px;
   overflow: hidden;
-  border: solid 2px rgb(0, 37, 187);
+  border: solid 2px rgb(99, 131, 255);
 }
 
 /* Project 1 */
@@ -306,7 +359,7 @@ body {
   display: flex;
   font-size: 25px;
   overflow: hidden;
-  border: solid 2px rgb(0, 37, 187);
+  border: solid 1px rgb(99, 131, 255);
 }
 
 .box2::before {
@@ -328,7 +381,7 @@ body {
   display: flex;
   font-size: 25px;
   overflow: hidden;
-  border: solid 2px rgb(0, 37, 187);
+  border: solid 1px rgb(99, 131, 255);
 }
 
 .box3::before {
@@ -347,13 +400,13 @@ body {
   flex-wrap: wrap;
   gap: 50px;
   justify-content: space-around;
+  margin-top: 150px;
 }
 
 .language-programation {
   display: flex;
   width: 500px;
   height: 300px;
-  border: solid 3px rgb(86, 86, 255);
   border-radius: 20px;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -373,6 +426,7 @@ body {
   overflow: hidden;
   z-index: 1;
   transition: all 0.7s ease-in-out;
+  margin: -7px;
 }
 
 .langue-c::before {
@@ -474,49 +528,53 @@ body {
 .langue-c {
   top: 14px;
   left: 8px;
+  border: solid 2px rgb(99, 131, 255);
 }
 .langue-python {
   top: 14px;
   right: 8px;
+  border: solid 2px rgb(255, 255, 0);
 }
 .langue-html {
   bottom: 14px;
   left: 8px;
+  border: solid 2px rgb(213, 89, 0);
 }
 .langue-css {
   bottom: 14px;
   right: 8px;
+  border: solid 2px rgb(99, 131, 255);
 }
 
 .langue-c:hover {
-  top: 7.3%;
-  left: 5%;
+  top: 11%;
+  left: 6%;
   width: 90%;
   height: 85%;
   z-index: 10;
-  box-shadow: 0 0 150px 40px #1e00ff;
+  box-shadow: 0 0 60px 40px #1e00ff;
 }
 .langue-python:hover {
-  top: 7.3%;
-  right: 5%;
+  top: 9%;
+  right: 6%;
   width: 90%;
   height: 85%;
   z-index: 10;
   box-shadow:
     -40px -40px 150px 40px #006aff,
-    40px 40px 150px 40px yellow;
+    40px 40px 60px 40px yellow;
 }
 .langue-html:hover {
-  bottom: 7.3%;
-  left: 5%;
+  bottom: 8%;
+  left: 6%;
   width: 90%;
   height: 85%;
   z-index: 10;
-  box-shadow: 0 0 150px 40px #dc6300;
+  box-shadow: 0 0 25px 40px #dc6300;
 }
 .langue-css:hover {
-  bottom: 7.3%;
-  right: 5%;
+  bottom: 8%;
+  right: 6%;
   width: 90%;
   height: 85%;
   z-index: 10;
