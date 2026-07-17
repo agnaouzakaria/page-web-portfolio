@@ -667,15 +667,27 @@ par-sum {
   text-align: left;
   font-size: 30px;
   margin-bottom: 30px;
+  flex-wrap: wrap;
 }
 
 .lang-pbix {
   border-radius: 20px;
   height: 40vw;
   width: 60vw;
+  display: flex;
+  justify-content: center;
 }
 .iframe {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: center;
+}
+.responsive-break {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .responsive-break {
+    display: inline;
+  }
 }
